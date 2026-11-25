@@ -115,7 +115,7 @@ If you would like to contribute:
 
 **Rajesh Mondal**
 
-Electrical Engineering Undergraduate | Aspiring Front-End Developer
+Electronis & Communication Engineering Undergraduate | Aspiring Front-End Developer
 
 - GitHub: [@rajisdevil](https://github.com/rajisdevil)
 
