@@ -1,0 +1,407 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Explore web development projects, experiments, and creative work built using modern web technologies.">
+
+    <meta name="author" content="Your Name">
+
+    <title>Web Development Projects | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="#home" class="logo">
+                <span class="logo-icon">&lt;/&gt;</span>
+                <span>Dev<span class="accent">Projects</span></span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false">
+                <i data-lucide="menu"></i>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="https://github.com/YOUR_USERNAME"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="nav-github">
+                        GitHub <i data-lucide="arrow-up-right"></i>
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero container" id="home">
+
+            <div class="hero-content">
+
+                <div class="availability">
+                    <span class="status-dot"></span>
+                    WEB DEVELOPMENT PORTFOLIO
+                </div>
+
+                <p class="hero-intro">Hello, World! 👋</p>
+
+                <h1>
+                    Building ideas into
+                    <span class="gradient-text">digital experiences.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Welcome to my web development portfolio. Explore my
+                    projects, experiments, and creative implementations
+                    using modern web technologies.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        Explore Projects
+                        <i data-lucide="arrow-down"></i>
+                    </a>
+
+                    <a href="https://github.com/YOUR_USERNAME"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn btn-outline">
+                        <i data-lucide="github"></i>
+                        GitHub Profile
+                    </a>
+                </div>
+
+                <div class="hero-socials">
+                    <span>Connect with me</span>
+
+                    <a href="https://github.com/YOUR_USERNAME"
+                       aria-label="GitHub"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <i data-lucide="github"></i>
+                    </a>
+
+                    <a href="https://linkedin.com/in/YOUR_USERNAME"
+                       aria-label="LinkedIn"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="hero-visual">
+                <div class="code-card">
+
+                    <div class="code-header">
+                        <div class="window-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <span>developer.js</span>
+                    </div>
+
+                    <pre><code>
+<span class="code-purple">const</span> developer = {
+  name: <span class="code-green">"Your Name"</span>,
+  role: <span class="code-green">"Web Developer"</span>,
+
+  skills: [
+    <span class="code-green">"HTML"</span>,
+    <span class="code-green">"CSS"</span>,
+    <span class="code-green">"JavaScript"</span>,
+    <span class="code-green">"React"</span>
+  ],
+
+  passion: <span class="code-green">"Building things"</span>,
+
+  build() {
+    <span class="code-purple">return</span> <span class="code-green">"Ideas into reality!"</span>;
+  }
+};
+                    </code></pre>
+
+                    <div class="code-footer">
+                        <span><i data-lucide="code-2"></i> Always Learning</span>
+                        <span class="code-online">● Online</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Statistics -->
+        <section class="stats-section container">
+
+            <div class="stat-card">
+                <span class="stat-number" id="totalProjects">00</span>
+                <span class="stat-label">Total Projects</span>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-number" id="totalCategories">00</span>
+                <span class="stat-label">Categories</span>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Passion for Learning</span>
+            </div>
+
+        </section>
+
+
+        <!-- Projects -->
+        <section class="projects-section section-padding" id="projects">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <div>
+                        <span class="section-label">MY WORK</span>
+                        <h2>Featured <span class="gradient-text">Projects.</span></h2>
+                        <p>
+                            A collection of projects showcasing my
+                            development journey and technical skills.
+                        </p>
+                    </div>
+
+                    <span class="project-count" id="projectCount">
+                        00 Projects
+                    </span>
+                </div>
+
+
+                <!-- Search and Filter -->
+                <div class="project-controls">
+
+                    <div class="search-box">
+                        <i data-lucide="search"></i>
+
+                        <input
+                            type="search"
+                            id="searchInput"
+                            placeholder="Search projects..."
+                            aria-label="Search projects">
+                    </div>
+
+                    <div class="filter-buttons" id="filterButtons">
+                        <button class="filter-btn active"
+                                data-filter="All">
+                            All Projects
+                        </button>
+
+                        <button class="filter-btn"
+                                data-filter="HTML & CSS">
+                            HTML & CSS
+                        </button>
+
+                        <button class="filter-btn"
+                                data-filter="JavaScript">
+                            JavaScript
+                        </button>
+
+                        <button class="filter-btn"
+                                data-filter="React">
+                            React
+                        </button>
+
+                        <button class="filter-btn"
+                                data-filter="Other">
+                            Other
+                        </button>
+                    </div>
+
+                </div>
+
+
+                <!-- Project Cards -->
+                <div class="projects-grid" id="projectsGrid"></div>
+
+                <div class="empty-state" id="emptyState" hidden>
+                    <i data-lucide="folder-search"></i>
+                    <h3>No projects found</h3>
+                    <p>Try searching with another keyword.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- About -->
+        <section class="about-section section-padding" id="about">
+
+            <div class="container about-container">
+
+                <div class="about-left">
+                    <span class="section-label">ABOUT THIS REPOSITORY</span>
+
+                    <h2>
+                        Code. Create.
+                        <span class="gradient-text">Innovate.</span>
+                    </h2>
+                </div>
+
+                <div class="about-right">
+
+                    <p>
+                        This repository is a growing collection of my
+                        web development projects, experiments, and
+                        practical implementations.
+                    </p>
+
+                    <p>
+                        Each project represents an opportunity to learn
+                        something new, solve problems, and improve my
+                        development skills.
+                    </p>
+
+                    <p>
+                        My goal is to build accessible, responsive,
+                        user-friendly, and meaningful digital experiences.
+                    </p>
+
+                    <div class="skills-list">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>Responsive Design</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Contact -->
+        <section class="contact-section section-padding" id="contact">
+
+            <div class="container contact-container">
+
+                <span class="section-label">GET IN TOUCH</span>
+
+                <h2>
+                    Have an idea?
+                    <span class="gradient-text">Let's connect.</span>
+                </h2>
+
+                <p>
+                    Interested in collaboration, development, or
+                    discussing new ideas? Feel free to connect.
+                </p>
+
+                <div class="contact-buttons">
+
+                    <a href="mailto:YOUR_EMAIL@example.com"
+                       class="btn btn-primary">
+                        <i data-lucide="mail"></i>
+                        Send an Email
+                    </a>
+
+                    <a href="https://github.com/YOUR_USERNAME"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn btn-outline">
+                        <i data-lucide="github"></i>
+                        GitHub
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <a href="#home" class="logo">
+                <span class="logo-icon">&lt;/&gt;</span>
+                Dev<span class="accent">Projects</span>
+            </a>
+
+            <p>
+                Designed & developed with ❤️ by
+                <span>Your Name</span>
+            </p>
+
+            <p class="copyright">
+                © <span id="currentYear"></span>
+                Web Development Projects. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Project Details Modal -->
+    <div class="modal" id="projectModal"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="modalTitle"
+         hidden>
+
+        <div class="modal-overlay" id="modalOverlay"></div>
+
+        <div class="modal-content">
+
+            <button class="modal-close"
+                    id="modalClose"
+                    aria-label="Close project details">
+                <i data-lucide="x"></i>
+            </button>
+
+            <div id="modalBody"></div>
+
+        </div>
+
+    </div>
+
+
+    <script src="js/projects.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
