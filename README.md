@@ -64,7 +64,7 @@ This repository will be continuously updated with new projects.
 
 The repository website can be hosted using **GitHub Pages**.
 
-Once deployed, the website will be accessible at:
+Website accessible at:
 
 `https://rajisdevil.github.io/Web-Development-Projects/`
 
